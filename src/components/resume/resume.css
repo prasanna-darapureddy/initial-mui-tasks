@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    margin: 0px;    
+}
+.background-container{
+    padding: 10px;
+    background-color: #EEF2F6;
+    min-height: 100vh;
+}
+.resume-page-container{
+    background-color: #fff;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 2px;
+    min-height: 100vh;
+}
+.profile-background-container{
+    display: flex;
+    align-items: center;
+    background-color: #808080;
+    padding: 30px;
+    height: 80px;
+    border-radius: 0 0 50% 5%;
+}
+.profile-img-container{
+    padding: 5px;
+    height: 110px;
+    width: 110px;
+    border-radius: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;  
+    
+}
+.profile-img-container:hover{
+    box-shadow: inset 0px 4px 16px 0px #08C1CE;  
+    zoom: 1.1;
+    
+}
+.profile-img{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;       
+}
+  
+.name,.contact{
+    color: #fff;
+    font-family: "Roboto";
+    margin-bottom: 8px;
+}
+.name:hover, .contact:hover{
+    color: #08C1CE;
+    zoom: 1.2;
+}
+.content-container{
+    display: flex;
+}
+.personal-column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    width:50%;
+}
+.heading-container{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.icon-container{
+    height: 40px;
+    width: 45px;
+    border-radius: 60px;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.icon-container:hover{
+    background-color: #000;
+}
+.icon{
+    color: #fff;
+}
+.icon:hover{
+    color: #08C1CE;
+}
+.category-container{
+    padding: 10px;
+    padding-left: 0px;
+    border-bottom: 2px solid #000;
+    width:100%
+}
+.sub-heading, .star{
+    color: #08C1CE;
+    font-weight: 700;
+}
+
+.address{
+    font-style: normal;
+    margin-top: 10px;
+}
+.about-me-content{
+    margin-top: 10PX;
+}
+.education-container, .languages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.education, .heading-content{
+    margin-top: 8px;
+}
+.sub-heading-content{
+    margin-top: 8px;
+    font-size: 16px;
+}
+.linked-text{
+    color: #000;
+    text-decoration: none;
+}
+.linked-icon{
+    margin-left: 5px;    
+    font-size: 12px;
+}
+
+.linked-icon:hover{
+    color: #08C1CE;
+}
+.all-languages-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.each-language-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+.language{
+    margin-right: 10px;
+}
+.star-empty{
+    color: #E2E5E5;
+}
+.sub-heading:hover, .star:hover, .star-empty:hover{
+    zoom: 1.2;
+}
+.experiance-column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-stretch;
+    justify-content: flex-start ;
+}
+.roles-container{
+    margin-top: 20px;
+}
+.all-skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.skill-card{
+    padding: 8px;
+    border-radius: 4px;
+    width: 130px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-card:hover{
+    background-color: #000;
+    color: #fff;
+}
+.highlight{
+    background-color: #EAEFEF;
+}
+.refr-content{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile-background-container{
+        padding: 20px;
+    }
+    .profile-img-container{
+        height: 80px;
+        width: 80px;
+    }
+    .profile-img{
+        height: 70px;
+        width:70px;
+    }
+    .name {
+        font-size: 14px;
+    }
+    .contact{
+        font-size: 12px;
+    }
+   .content-container{
+    display: flex;
+    flex-direction: column;
+   }
+    .all-languages-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .each-block, .category-container, .personal-column, .experiance-column{
+        width: 100%;
+    }
+    .sub-heading-content{
+        font-size: 15px;
+    }
+    .skill-card{
+        width: 90px;
+        font-size: 11px;
+    }
+    .sub-heading{
+        font-size: 15px;
+    }
+    .skill{
+        font-size: 12px;
+    }
+    .exp-comp-details{
+        font-size: 12px;
+    }
+    .star,.star-empty{
+        font-size: 12px;
+    }
+}

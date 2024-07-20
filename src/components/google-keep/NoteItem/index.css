@@ -1,0 +1,154 @@
+.note-card-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 0px;
+  border: 1px solid #d6d5d5;
+  height: 100%;
+  min-width: 150px;
+  width: 250px;
+}
+
+.note-card-button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  height: fit-content;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.note-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-title {
+  font-size: 20px;
+}
+
+.note-description {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.card-icons-container {
+  display: none;
+  position: relative;
+}
+
+.title-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pin-icon {
+  display: none;
+  color: #616161;
+}
+
+.card-expanded-icons {
+  margin-right: 24px;
+  font-size: 18px;
+  color: #616161;
+}
+.card-end-icon {
+  margin-right: 0px;
+}
+
+.note-card-item:hover {
+  box-shadow: 0px 4px 16px 0px #808080;
+
+  .card-icons-container {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .pin-icon {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+.options-icon-button {
+  border: none;
+  background-color: transparent;
+  margin-left: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.options-container {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  display: flex;
+  position: absolute;
+  left: 215px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 16px 0px #808080;
+}
+
+.options-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.options-item:hover {
+  background-color: #f5f1f5;
+
+  .options-button {
+    background-color: #f5f1f5;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .options-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.pop-up-note-card-item {
+  width: 700px;
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #d6d5d5;
+  height: 100%;
+  min-width: 150px;
+}
+
+.pop-up-card-icons-btn-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up-close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.poped-description-input,
+.poped-title-input {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  resize: none;
+}
+.poped-description-input {
+  min-height: 50px;
+  max-height: 500px;
+  height: 200px;
+}
